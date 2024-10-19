@@ -2,6 +2,7 @@
 import ConditionalRendering from './conditionalRendaring';
 import { Map } from './map/Map';
 import { Map2 } from './map/Map';
+import Count from './count';
 import './App.css'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <> 
       
       <h1>React</h1> 
+      <Count></Count>
       <p>My name is {person.name}. Age is {person.age}. {person.isStudent? `studying ${person.study}`: 'Not studying'}</p>
       <hr />
       <Employe name = "Abdul Ali" salary = '25k'position = 'Supervisor' />
@@ -44,7 +46,6 @@ function App() {
   )
 }
 function Employe (props) {
-  console.log(props);
   return(
     <div className='addCss' style={{margin:"10px"}}>
       <h2>Employee of Fakir LTD</h2>
